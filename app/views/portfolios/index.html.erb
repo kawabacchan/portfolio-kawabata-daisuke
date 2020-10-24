@@ -1,13 +1,20 @@
 <header>
+  <div>
+    <div class="menu-btn">
+      <a href="#self-introduction">自己紹介</a>
+      <a href="#skill-set">スキルセット</a>
+      <a href="#my-product">制作物</a>
+    </div>
+  </div>
   <div class="header-message">
     <div class="page-title">portfolio</div>
-    <p>Kawabata Daisuke</p>
+    <div class="page-fullname">Kawabata Daisuke</div>
   </div>
 </header>
-<div class="self-introduction">
+<div class="self-introduction" id="self-introduction">
   <div class="content-title">自己紹介</div>
   <div class="self-introduction-content">
-    <div class="self-introduction-left"><p>写真</p></div>
+    <div class="self-introduction-left"><img src="/assets/myself.jpg" alt=""></div>
     <div class="self-introduction-right">
       <ul>
         <li>名前：川端 大亮(かわばた だいすけ)</li>
@@ -15,56 +22,62 @@
         <li>現住所: 愛知県名古屋市</li>
         <li>年齢: 31歳</li>
         <li>前職: 携帯ショップにて光回線の営業</li>
-        <li>エンジニアを目指すきっかけ: 日々お客様とアプリの話をする中で、<br>自身の手で老若男女に喜ばれるアプリケーションを作りたいと思ったこと</li>
+        <li>エンジニアを目指すきっかけ: 日々お客様とアプリの話をする中で、<br>自身の手で誰かに喜ばれるアプリケーションを作りたいと思ったこと</li>
         <li>尊敬する人: YouTubeのエンジニアチャンネル 粟島さん</li>
-        <li>尊敬する理由: 幅広いアプリケーションを素早く作られているため</li>
+        <li>尊敬する理由: 幅広いアプリケーションを作られている姿に憧れたため</li>
       </ul>
-      <p>
+      <p>＜メッセージ＞<br>
         はじめまして。川端と申します。
-        <br>現在、エンジニアでの転職活動を行っております。
+        <br>現在、サーバーサイドエンジニアでの転職活動を行っております。
         <br>よろしくお願い致します。
       </p>
     </div>
   </div>
 </div>
-<div class="skill-set">
+<div class="skill-set" id="skill-set">
   <div class="content-title">スキルセット</div>
-  <div class="slill-set-content">
+  <div class="skill-set-content">
     <ul>
-      <li>言語・・・HTML, CSS, JavaScript, Ruby, MySQL</li>
+      <li>言語・・・Ruby, HTML, CSS, JavaScript, MySQL</li>
       <li>フレームワーク・ライブラリ・・・Ruby on Rails</li>
-      <li>ツール・・・Git, AWS, Docker</li>
+      <li>ツール・・・Git, AWS</li>
       <li>OS・・・Linux</li>
+      <p>自己学習中</p>
+      <li>AWS</li>
+      <li>Docker</li>
+      <li>Ceicle CI</li>
     </ul>
+
   </div>
 </div>
-<div class="my-product">
+<div class="my-product" id="my-product">
   <div class="content-title">制作物</div>
   <div class="my-product-contents">
     <div class="my-product-content">
       <div class="product-content-left">
-        <div><%= link_to "フリマアプリ（テックキャンプ最終課題）", "https://furima-29756.herokuapp.com/" %></div><%= image_tag "/furima-app-image.png", alt: "furima-app-image" %>
-      </div>
-      <div class="product-content-right">
-        <div class="product-right-title">詳細</div>
-        <p>個人が商品の出品や購入ができるプラットホームです。</p>
-      </div>
-    </div>
-    <div class="my-product-content">
-      <div class="product-content-left">
-        <div><%= link_to "在庫管理アプリ（オリジナルアプリ）", "https://zaiko-29756.herokuapp.com/" %></div>
+        <div><%= link_to "在庫管理アプリ", "https://zaiko-29756.herokuapp.com/" %></div>
         <%= image_tag "/zaiko-app-image.png", alt: "zaiko-app-image" %>
       </div>
       <div class="product-content-right">
-        <div class="product-right-title">詳細</div>
-        <p>
-          家具の製造販売しているメーカーで在庫管理に利用できるアプリです。<br>
-          ポイントは以下の3つの機能です。<br>
-          1.在庫数に応じて発注リストを作成する。<br>
-          2.取引先ごとに納期表を作成する。<br>
-          3.工場からエクセルで送られてくる商品の在庫数のデータがこのアプリ内の在庫数と合うのか照合する。<br>
-          作成理由：家具メーカーで働いていた時の事務作業が自動化でき、ミスも減ると考えたためです。
-        </p>
+        <div class="product-right-title">
+          在庫管理アプリ<br>
+          （ターゲットイメージ：家具メーカー）
+        </div>
+        <div class="product-right-text">
+          ＜ポイント＞<br>
+          在庫管理に伴う業務もサポートできること<br>
+          ＜在庫管理の基本機能＞<br>
+          ・商品登録<br>
+          ・取引先の企業登録<br>
+          ・取引先の企業の店舗登録<br>
+          ・受付した注文登録<br>
+          ＜在庫管理に伴う業務をサポートする機能＞<br>
+          1.在庫数が少ない商品の発注リスト作成<br>
+          2.取引先ごとの納期表作成<br>
+          3.エクセルデータと本アプリケーションデータの在庫照合<br>
+          ＜制作理由＞<br>
+          在庫管理だけでなく、在庫管理に伴う業務もPCに行わせることで、<br>ミスの防止や作業時間短縮に役立つと考えたため、制作しました。
+        </div>
       </div>
     </div>
     <div class="my-product-content">
@@ -73,16 +86,46 @@
         <%= image_tag "/animelist-app-image.png", alt: "animelist-app-image" %>
       </div>
       <div class="product-content-right">
-        <div class="product-right-title">詳細</div>
-        <p>
-          視聴したアニメやこれから見たいアニメなどをリスト化することができるアプリです。<br>
-          自身のリストを友人と見せ合うためにフォロー機能をつけ、フォローした友人のページには遷移できる仕様にしました。
-          リストの内容はアニメタイトル、ジャンル、評価点、画像、メモです。
-          作成理由：NETFLIXやU-NEXT、amazon prime videoなどのVODの発達により、アニメを視聴する人口は増加していると推測でき、需要があると考えたためです。<br>
-          私自身もアニメが好きですが、そう伝えると好きなアニメやおすすめのアニメを聞かれることが多々あります。<br>
-          アニメを多く見れば見るほど、おすすめアニメを絞ることは難しいですし、即座に思い付かないこともあります。<br>
-          実体験から、メモ帳にメモしておくのは味気なく、継続が難しいため、アニメ専用のフォーマットがあると良いと考えました。
-        </p>
+        <div class="product-right-title">
+          アニメリスト化アプリ<br>
+          （ターゲットイメージ：アニメが趣味の人）
+        </div>
+        <div class="product-right-text">
+          ＜ポイント＞<br>
+          ・リストごとに分けてアニメタイトルを管理できる点<br>
+          ・友達とリストを見せ合える点<br>
+          ＜機能＞<br>
+          ・ユーザー登録<br>
+          ・リスト登録<br>
+          ・アニメ登録<br>
+          ・友達検索<br>
+          ・フォロー登録<br>
+          ＜制作理由＞<br>
+          近年、VODの発達により、気軽に多くのアニメを見ることが可能になる中、アニメ好きが増加していると考えました。<br>
+          アニメ好き同士でおすすめのアニメを教え合うシーンが多発する中で、おすすめのアニメを控えておくことができるアプリケーションはアニメ好きに喜ばれると考え、制作しました。
+        </div>
+      </div>
+    </div>
+    <div class="my-product-content">
+      <div class="product-content-left">
+        <div><%= link_to "フリマアプリ（テックキャンプ最終課題）", "https://furima-29756.herokuapp.com/" %></div><%= image_tag "/furima-app-image.png", alt: "furima-app-image" %>
+      </div>
+      <div class="product-content-right">
+        <div class="product-right-title">
+          フリマアプリ（テックキャンプ最終課題）
+        </div>
+        <div class="product-right-text">
+          ＜ポイント＞<br>
+          ・登録したユーザーが商品の出品・購入ができる点
+          ＜機能＞<br>
+          ・ユーザー登録<br>
+          ・商品出品<br>
+          ・商品購入<br>
+          ＜制作理由＞<br>
+          テックキャンプの最終課題だったためです。<br>
+          テックキャンプ内では初めて作成詳細を教えられない状態で、アプリ制作を行ったため、<br>
+          大変勉強になりました。
+        </div>
       </div>
     </div>
   </div>
